@@ -3,55 +3,69 @@
 }
 
 .profile-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-  .profile-text {
+.profile-text {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .profile-image {
     display: none;
   }
 
-  @media (max-width: 767.98px) {
-    .profile-image {
-      display: none;
-    }
-
-    .profile-text {
-      display: inline;
-    }
+  .profile-text {
+    display: inline;
   }
+}
 
+.bg-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bg-image {
+  width: 100%;
+  height: auto;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Hitam dengan transparansi 60% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  z-index: 2;
+}
+
+@media (max-width: 767.98px) {
   .bg-container {
-    position: relative;
-    text-align: center;
-    color: white;
+    height: 100vh; /* Buat kontainer setinggi viewport */
+    overflow: hidden; /* Sembunyikan overflow */
   }
 
   .bg-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .bg-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Hitam dengan transparansi 60% */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-width: 100%;
+    object-fit: cover;
   }
-
-  .bg-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2em;
-    z-index: 2;
-  }
+}
