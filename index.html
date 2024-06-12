@@ -25,20 +25,15 @@
                     <li class="nav-item mx-2"><a href="/lokasi.html" class="nav-link text-light">Location</a></li>
                     <li class="nav-item mx-2"><a href="/tiket.html" class="nav-link text-light">Ticket Info</a></li>
                 </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="img/profile.jpg" alt="Profile" class="profile-image">
-                            <span class="profile-text text-light">Profile</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="dropdown">
+                  <button class="btn btn-body dropdown-toggle text-light border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Bahasa
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -62,7 +57,17 @@
       <img src="img/bg-blur.png" alt="background" loading="lazy" class="img-fluid bg-image">
       <div class="bg-overlay"></div>
       <div class="bg-text">
-        <p class="font-playfair text-6xl">Hello</p>
+        <div class="row gap-5">
+          <div class="col">
+            <img src="img/patung.png" alt="" class="img-fluid img-patun">
+          </div>
+          <div class="col">
+            <div class="w-auto">
+              <p class="fs-5">Candi Borobudur (bahasa Jawa: ꦕꦟ꧀ꦝꦶꦧꦫꦧꦸꦝꦸꦂ, .Candhi Båråbudhur) adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini terletak kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.
+                 </p>
+            </div>
+          </div>
+        </div>
         <p class="font-playfair text-6xl">World</p>
       </div>
     </div>
