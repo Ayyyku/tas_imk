@@ -147,6 +147,13 @@
   margin-top: 10px;
 }
 
+.white-box{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  height: 20px;
+}
+
 @media (max-width: 767.98px) {
   .bg-container {
     height: 100vh; /* Buat kontainer setinggi viewport */
