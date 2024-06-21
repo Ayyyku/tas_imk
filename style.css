@@ -160,6 +160,9 @@
     overflow: hidden; /* Sembunyikan overflow */
   }
 
+  .atas {
+    margin-top: 150px;
+  }
   .bg-image {
     width: auto;
     height: 100%;
